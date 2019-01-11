@@ -3,7 +3,7 @@ POWON project repository.
 
 ## Development Setup
 
-###Composer
+### Composer
 Clone this project with git. Composer is required to donwload the dependencies.
 Once in the project directory, run
 ```
@@ -13,10 +13,10 @@ Alternatively, you can download composer.phar, place it on the project folder an
 ```
 $ php composer.phar install
 ```
-######Note: It is important to run these commands from the root of the project folder.
+###### Note: It is important to run these commands from the root of the project folder.
 This should create a `vendor` folder inside the project directory.
 
-###Database
+### Database
 To prepare the database, launch the scripts in the scripts folder for your development MySQL database.
 Run `create_tables.sql` first, then optionally `populate_tables.sql` if you want some data in it.
 To do that, you can simply cd into the scripts/ directory, log in to the mysql database with the command line and run:
@@ -41,11 +41,11 @@ Alternatively, download phpunit.phar, place it in the project folder and run:
 $ php phpunit.phar --bootstrap tests/test_autoload.php tests/
 ```
 
-###Configuration
+### Configuration
 Create a configuration file in `config/` called `settings.php`. Follow the
 structure provided by `settings.php.example` and add your personal configuration.
 You will need to change the database configuration to point to your database.
 
-###Apache
+### Apache
 The easiest way is to set the 'document root' to be the project root folder. We added `.htaccess` files
 to make sure it works.
